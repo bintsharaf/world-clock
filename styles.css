@@ -5,7 +5,7 @@ body {
 .container {
     max-width: 600px;
     margin: 60px auto;
-    padding: 10px 15px;
+    padding: 25px;
     border-radius: 10px;
    
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -17,12 +17,39 @@ h1 {
 }
 select {
     padding: 10px;
+    margin-top: 30px;
     width: 100%;
     display: block;
     border-radius: 5px;
     border: 1px solid rgb(186, 183, 183);
 }
-
+.city {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 1px dashed rgb(0, 0, 0, 0.2);
+}
+.city:last-child {
+    border: none;
+}
+h2 {
+    font-size: 28px;
+    margin: 0 0 5px;
+}
+.time {
+    font-size: 40px;
+    font-weight: 700;
+}
+.time small {
+    font-size: 15px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.date {
+    opacity: 0.5;
+}
 footer {
     text-align: center;
+    font-size: 14px;
+    color: 0, 0, 0, 0.7;
 }
