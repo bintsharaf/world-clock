@@ -16,7 +16,28 @@ function updateTimeZone() {
     riyadhTime.innerHTML =  riyadhTimeZone.format("h:mm:ss  [<small>]A[</small>]"); 
 
 }
+
+
+function updateCity(event) {
+    let cityTimeZone = event.target.value;
+    let cityTime = moment().tz(cityTimeZone);
+    let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+    let citiesElement = document.querySelector("#cities");
+    citiesElement.innerHTML = 
+    `<div class="city" id="lagos">
+                <div>
+                    <h2>${cityName}</h2>
+                    <div class="date" id="date">${cityTime.format("h:mm:ss")} <small>${cityTime.format("A")}</small></div>
+                </div>
+                
+                <div class="time" id="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format("A")}</small></div>
+            </div>`
+}
 updateTimeZone();
 setInterval(updateTimeZone, 1000);
+let citiesSelectElement = document.querySelector("#city");
+citiesSelectElement.addEventListener("change", updateCity);
+
+
 
 
