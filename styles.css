@@ -1,13 +1,68 @@
 body {
     /*color: #1A73E8;*/
-
+    background-image: url(images/worldWatch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*backdrop-filter: blur(5px);*/
+    margin: 0;
+    padding: 0;
+    
 }
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1;
+}
+.content {
+    position: relative;
+    z-index: 2;
+}
+.dark {
+    background-image: url(images/watchPics.jpg);
+       
+}
+      
+.dark .container {
+        background: #775a45;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.dark a {
+        color: black;
+        }
+.dark footer {
+    background-color: #775a45;
+    border: 1px dashed #ff9b53;
+    color: white;
+}
+.theme-button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 15px;
+            background: black;
+            color: white;
+            border: 1px solid #ff9b53;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+.theme-button:hover {
+            color: black;
+            background: white;
+        }
+
 .container {
     max-width: 600px;
     margin: 60px auto;
     padding: 25px;
     border-radius: 10px;
-   
+    background-color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 h1 {
@@ -52,6 +107,14 @@ footer {
     text-align: center;
     font-size: 14px;
     color: 0, 0, 0, 0.6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 600px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px dashed #ff9b53;
 }
 
 @media (max-width: 600px) {

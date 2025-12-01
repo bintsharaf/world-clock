@@ -1,3 +1,17 @@
+function changeTheme() {
+            let body = document.querySelector("body");
+            //interchanging the theme from dark to light
+            if (body.classList.contains("dark")) {
+                    body.classList.remove("dark");
+               } else {
+                    body.classList.add("dark");
+                }
+            
+        }
+let button = document.querySelector(".theme-button");
+button.addEventListener("click", changeTheme);
+
+
 function updateTimeZone() {
     
     //Lagos

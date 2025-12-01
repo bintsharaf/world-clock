@@ -10,44 +10,47 @@
     <script src="https://kit.fontawesome.com/9f22623552.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   
-    <div class="container">
-        <h1>World Clock <i class="fa-regular fa-clock"></i></h1>
+    <div class="blur-overlay"></div>
+        <div class="content">   
+            <button class="theme-button">Change theme</button>
+            <div class="container">
+                <h1>World Clock <i class="fa-regular fa-clock"></i></h1>
 
-            <select id="city">
-                <option value="">Select a city...</option>
-                <option value="current">My Current Location</option>
-                <option value="Africa/Lagos">Lagos</option>
-                <option value="Asia/Kuwait">Kuwait</option>
-                <OPtion value="Europe/London">London</OPtion>
-            </select>
-            
-            <div id= "cities">
-                <div class="city" id="lagos">
-                <div>
-                    <h2>Lagos</h2>
-                    <div class="date"></div>
-                </div>
-                
-                <div class="time"></div>
-            </div>
-            <div class="city" id="riyadh">
-                <div>
-                    <h2>Riyadh</h2>
-                    <div class="date"></div>
-                </div>
-                
-                <div class="time"></div>
-                </div>
-            </div>
-            
-            
-            
-    </div>
+                    <select id="city">
+                        <option value="">Select a city...</option>
+                        <option value="current">My Current Location</option>
+                        <option value="Africa/Lagos">Lagos</option>
+                        <option value="Asia/Kuwait">Kuwait</option>
+                        <OPtion value="Europe/London">London</OPtion>
+                    </select>
+                    
+                    <div id= "cities">
+                        <div class="city" id="lagos">
+                        <div>
+                            <h2>Lagos</h2>
+                            <div class="date"></div>
+                        </div>
+                        
+                        <div class="time"></div>
+                    </div>
+                    <div class="city" id="riyadh">
+                        <div>
+                            <h2>Riyadh</h2>
+                            <div class="date"></div>
+                        </div>
+                        
+                        <div class="time"></div>
+                        </div>
+                    </div>
+                    
+                    
+             </div>        
+        
     
     <footer>
         This project was coded by <a href="https://www.linkedin.com/in/fatimahsharafudeen/" target="_blank" rel="noopener noreferrer">Fatimah Sharafudeen</a> and is open-sourced on <a href="https://github.com/bintsharaf/world-clock/" target="_blank" rel="noopener noreferrer">GitHub</a> and hosted on <a href="https://timezones-now.vercel.app/" target="_blank" rel="noopener noreferrer">Vercel</a>
     </footer>
     <script src="index.js"></script>
+    </div>
 </body>
 </html>
